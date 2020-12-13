@@ -1,0 +1,123 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(45deg,  #45484d 0%,#000000 100%);
+    perspective: 2000px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.home-header{
+    position: relative;
+    height: 55vh;
+    background-image: url('img/wp.jpg');
+}
+
+.home-header h1{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f0f0f0;
+    font-size: 5em;
+}
+
+.toggle-btn{
+    color: #f0f0f0;
+    float: right;
+    margin: 1rem;
+    font-size: 42px;
+    transition-duration: .3s;
+}
+
+.toggle-btn:hover{
+    color: rgb(255, 68, 0);
+}
+
+.body-wrap{
+    transition-duration: 0.5s;
+    transform-origin: 100% 0 0;
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    width: 100%;
+}
+
+.toggle-body{
+    transform: scale(0.8) rotateY(-40deg);
+    opacity: 0.5;
+}
+
+section{
+    padding-top: 5%;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+section h1{
+    font-size: 3em;
+}
+
+
+/* NAVBAR */
+
+.side-nav{
+    width: 15%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: left .3s, opacity .3s
+}
+
+.appear{
+    left: 25%;
+    opacity: 1;
+}
+
+.nav-title{
+    margin: 0;
+    color: #efefef;
+    border-bottom: 1px solid #efefef;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 15px;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+}
+
+.nav-itm{
+    margin-top: 1.5em;
+}
+
+.nav-itm a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #efefef;
+    font-size: 2em;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-itm a:hover{
+    color: rgb(255, 68, 0);
+}
+
+.nav-itm i{
+    font-size: 18px;
+    margin-right: 0.5em;
+}
